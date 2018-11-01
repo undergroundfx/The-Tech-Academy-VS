@@ -31,13 +31,6 @@ namespace ConsoleApp2
 
             Console.Read();
 
-
-
-
-
         }
-
-
-
     }
 }
