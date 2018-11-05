@@ -80,7 +80,7 @@ namespace ConsoleApp3
                 Console.WriteLine("Not found");
             }
 
-            
+            // second list
 
             List<string> names = new List<string> { "Mario", "James", "Peter", "Mario", "David", "James", "Bob", "Henry" };
             List<int> indexes = new List<int> { };
