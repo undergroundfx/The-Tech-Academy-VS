@@ -109,6 +109,7 @@ namespace ConsoleApp3
             List<string> names2 = new List<string> { "Mario", "James", "Peter", "Mario", "David", "James", "Bob", "Henry", "Henry" };
             List<string> duplicates = new List<string> { };
 
+            // place each item in new lists and then loop thru the list to check for duplicates
             foreach (string name2 in names2)
             {
                 duplicates.Add(name2);
