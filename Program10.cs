@@ -5,7 +5,6 @@ namespace ConsoleApp3
 {
     class Program
 
-
     {
         static void Main(string[] args)
         {
@@ -54,7 +53,6 @@ namespace ConsoleApp3
             Console.WriteLine("You are 18 and old enough to vote!\n\n");
 
             // list
-
             List<string> cars = new List<string> { "Ford", "Chevy", "Mercedes", "Honda" };
 
             Console.WriteLine("Please enter a car brand");
@@ -105,7 +103,6 @@ namespace ConsoleApp3
             }
 
             // identical strings
-
             List<string> names2 = new List<string> { "Mario", "James", "Peter", "Mario", "David", "James", "Bob", "Henry", "Henry" };
             List<string> duplicates = new List<string> { };
 
@@ -120,9 +117,7 @@ namespace ConsoleApp3
                     {
                         Console.WriteLine("\n" + name2 + " has a duplicate");
                     }
-
                 }
-
             }
 
             Console.Read();
