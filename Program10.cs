@@ -5,7 +5,7 @@ namespace ConsoleApp3
 {
     class Program
 
-       
+
     {
         static void Main(string[] args)
         {
@@ -21,16 +21,16 @@ namespace ConsoleApp3
                 animals[i] = animals[i] + " " + userText;
                 Console.WriteLine(animals[i] + "\n");
             }
-            
+
             // infinite loop
             bool loop = true;
-            
+
             while (loop == true)
             {
-                Console.WriteLine("This was a loop");
-                loop = false; 
+                Console.WriteLine("This was a loop\n\n");
+                loop = false;
             }
-            
+
             // <
             int age1 = 1;
 
@@ -40,7 +40,7 @@ namespace ConsoleApp3
                 age1++;
             }
 
-            Console.WriteLine("You are 21 and old enough to buy beer!");
+            Console.WriteLine("You are 21 and old enough to buy beer!\n\n");
 
             // <=
             int age2 = 1;
@@ -51,11 +51,11 @@ namespace ConsoleApp3
                 age2++;
             }
 
-            Console.WriteLine("You are 18 and old enough to vote!");
+            Console.WriteLine("You are 18 and old enough to vote!\n\n");
 
             // list
 
-            List<string> cars = new List<string> {"Ford", "Chevy", "Mercedes", "Honda"};
+            List<string> cars = new List<string> { "Ford", "Chevy", "Mercedes", "Honda" };
 
             Console.WriteLine("Please enter a car brand");
             string brand = Console.ReadLine();
@@ -66,18 +66,18 @@ namespace ConsoleApp3
             {
                 if (cars[i] == brand)
                 {
-                    Console.WriteLine("Your selection is in index: " + Convert.ToString(i));
-                        
+                    Console.WriteLine("Your selection is in index: " + Convert.ToString(i) + "\n\n");
+
                     // exit the loop
                     i = cars.Count;
                     found = true;
                 }
-            
+
             }
 
             if (found == false)
             {
-                Console.WriteLine("Not found");
+                Console.WriteLine("Not found\n\n");
             }
 
             // second list
@@ -101,12 +101,32 @@ namespace ConsoleApp3
 
             if (found == false)
             {
-                Console.WriteLine("Name wasn't found");
+                Console.WriteLine("Name wasn't found\n");
+            }
+
+            // identical strings
+
+            List<string> names2 = new List<string> { "Mario", "James", "Peter", "Mario", "David", "James", "Bob", "Henry", "Henry" };
+            List<string> duplicates = new List<string> { };
+
+            foreach (string name2 in names2)
+            {
+                duplicates.Add(name2);
+
+                for (int j = 0; j < duplicates.Count - 1; j++)
+                {
+                    if (name2 == duplicates[j])
+                    {
+                        Console.WriteLine("\n" + name2 + " has a duplicate");
+                    }
+
+                }
+
             }
 
             Console.Read();
 
         }
-            }
+    }
 }
 
